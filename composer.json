@@ -1,0 +1,24 @@
+{
+  "name": "cpfbuscas-examples/cpfbuscas-consulta-placa-veiculos-php",
+  "type": "project",
+  "description": "Exemplos PHP de consulta por placa e busca de veículos por marca e UF na API CPF Buscas.",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  },
+  "keywords": [
+    "php",
+    "cpfbuscas",
+    "api-rest",
+    "curl",
+    "exemplos-php",
+    "consulta-placa",
+    "veiculos",
+    "placa"
+  ]
+}

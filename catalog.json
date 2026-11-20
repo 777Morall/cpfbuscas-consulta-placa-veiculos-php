@@ -1,0 +1,55 @@
+{
+  "placa": {
+    "key": "placa",
+    "module": "Veículos e outros",
+    "label": "Placa",
+    "method": "GET",
+    "path": "/api/v1/query/placa",
+    "params": [
+      {
+        "name": "placa",
+        "label": "Placa",
+        "required": true
+      }
+    ]
+  },
+  "veiculos_busca": {
+    "key": "veiculos_busca",
+    "module": "Veículos e outros",
+    "label": "Busca de veículos",
+    "method": "GET",
+    "path": "/api/v1/query/veiculos_busca",
+    "params": [
+      {
+        "name": "marca",
+        "label": "Marca",
+        "required": false
+      },
+      {
+        "name": "uf",
+        "label": "UF",
+        "required": false
+      },
+      {
+        "name": "ano_min",
+        "label": "Ano mínimo",
+        "required": false
+      },
+      {
+        "name": "ano_max",
+        "label": "Ano máximo",
+        "required": false
+      },
+      {
+        "name": "modelo",
+        "label": "Modelo",
+        "required": false
+      },
+      {
+        "name": "limit",
+        "label": "Limite",
+        "required": false
+      }
+    ]
+  }
+}

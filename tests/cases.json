@@ -1,0 +1,33 @@
+{
+  "valid": [
+    [
+      "placa",
+      "ABC-0A00"
+    ],
+    [
+      "placa",
+      "ABC-0000"
+    ],
+    [
+      "busca",
+      "MARCA_EXEMPLO",
+      "SP"
+    ]
+  ],
+  "invalid": [
+    [
+      "placa",
+      "abc"
+    ],
+    [
+      "busca",
+      "",
+      "SP"
+    ],
+    [
+      "busca",
+      "MARCA",
+      "XX"
+    ]
+  ]
+}
