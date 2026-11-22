@@ -62,4 +62,6 @@ Use dados com finalidade legítima e autorização adequada; evite registrar dad
 
 ## Documentação
 
+- [CPF Buscas — endereço adicional: cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/)
+
 [Documentação oficial da API](https://cpfbuscas.net/api-docs) e [planos CPF Buscas](https://cpfbuscas.net/api), consultados em 20/11/2026. Métodos e parâmetros vieram do catálogo público; os validadores adicionais são escolhas locais do exemplo. Nenhuma consulta real foi realizada durante a criação.
