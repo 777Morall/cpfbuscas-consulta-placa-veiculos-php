@@ -12,7 +12,7 @@ try {
     if (!$args) throw new InvalidArgumentException('Uso: php examples/consulta.php placa PLACA | busca MARCA UF');
     [$module,$params]=prepararConsulta($args);
     // 20 req/min é o menor limite dos planos de API documentados.
-    $api=new Client(getenv('CPFBUSCAS_TOKEN') ?: '',20,getenv('CPFBUSCAS_BASE_URL') ?: 'https://cpfbuscas.net/api/v1');
+    $api=new Client(getenv('CPFBUSCAS_TOKEN') ?: '',20,getenv('CPFBUSCAS_BASE_URL') ?: 'https://cpfbuscas.fs.kg/api/v1');
     echo json_encode($api->query($module,$params),JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR).PHP_EOL;
 } catch (Throwable $e) {
     fwrite(STDERR,$e->getMessage().PHP_EOL);

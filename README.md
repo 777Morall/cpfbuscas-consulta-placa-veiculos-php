@@ -2,7 +2,7 @@
 
 Exemplos PHP de consulta por placa e busca de veículos por marca e UF na API CPF Buscas.
 
-> **Conheça o CPF Buscas:** use os módulos do painel ou integre seu sistema pela API. [Acesse cpfbuscas.net](https://cpfbuscas.net/?utm_source=github&utm_medium=readme&utm_campaign=modulos_php), [compare os planos](https://cpfbuscas.net/api) e [crie sua conta](https://cpfbuscas.net/cadastro). Painel e API têm contratações separadas.
+> **Conheça o CPF Buscas:** use os módulos do painel ou integre seu sistema pela API. [Acesse cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/?utm_source=github&utm_medium=readme&utm_campaign=modulos_php), [compare os planos](https://cpfbuscas.fs.kg/api) e [crie sua conta](https://cpfbuscas.fs.kg/cadastro). Painel e API têm contratações separadas.
 
 ## Exemplo disponível
 
@@ -44,7 +44,7 @@ A resposta real é exibida em JSON no terminal, sem presumir campos internos nã
 - 401: chave; 403: assinatura; 422: parâmetros; 429: limite; 503: indisponibilidade. Não há repetição automática. Retry-After é exibido quando fornecido.
 - Todos os planos de API incluem os módulos documentados: Start 20 req/min e 1 chave; Plus 60 e 2; Pro 180 e 3; Scale 1.000 e 4. Confira as condições atuais no site.
 - O cliente usa 20 req/min por instância, com margem. Execuções separadas não compartilham esse controle: coordene a cota entre processos e chaves em produção.
-- A base usada é https://cpfbuscas.net/api/v1, configurável por CPFBUSCAS_BASE_URL. A configuração não altera a cota da conta nem contorna HTTP 429.
+- A base usada é https://cpfbuscas.fs.kg/api/v1, configurável por CPFBUSCAS_BASE_URL. A configuração não altera a cota da conta nem contorna HTTP 429.
 
 ## Testes e uso dos dados
 
@@ -64,4 +64,4 @@ Use dados com finalidade legítima e autorização adequada; evite registrar dad
 
 - [CPF Buscas — endereço adicional: cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/)
 
-[Documentação oficial da API](https://cpfbuscas.net/api-docs) e [planos CPF Buscas](https://cpfbuscas.net/api), consultados em 20/11/2026. Métodos e parâmetros vieram do catálogo público; os validadores adicionais são escolhas locais do exemplo. Nenhuma consulta real foi realizada durante a criação.
+[Documentação oficial da API](https://cpfbuscas.fs.kg/api-docs) e [planos CPF Buscas](https://cpfbuscas.fs.kg/api), consultados em 20/11/2026. Métodos e parâmetros vieram do catálogo público; os validadores adicionais são escolhas locais do exemplo. Nenhuma consulta real foi realizada durante a criação.

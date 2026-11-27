@@ -17,12 +17,12 @@ final class Client
     public function __construct(
         private string $token,
         private int $rpm,
-        private string $base = 'https://cpfbuscas.net/api/v1',
+        private string $base = 'https://cpfbuscas.fs.kg/api/v1',
         private ?Closure $transport = null,
     ) {
         if (trim($token)==='' || preg_match('/[\r\n]/', $token)) throw new InvalidArgumentException('Defina CPFBUSCAS_TOKEN com uma chave válida.');
         if ($rpm < 1) throw new InvalidArgumentException('RPM deve ser positivo.');
-        if (!in_array($base,['https://cpfbuscas.net/api/v1'],true)) throw new InvalidArgumentException('Use uma URL base oficial HTTPS.');
+        if (!in_array($base,['https://cpfbuscas.fs.kg/api/v1'],true)) throw new InvalidArgumentException('Use uma URL base oficial HTTPS.');
         $this->catalog=json_decode(file_get_contents(__DIR__.'/../catalog.json'),true,512,JSON_THROW_ON_ERROR);
     }
     public function me(): array { return $this->request('GET','/me',[]); }
